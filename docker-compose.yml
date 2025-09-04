@@ -1,0 +1,14 @@
+services:
+  aziend-app:
+    image: nginx:alpine
+    container_name: aziend-app
+    ports:
+      - 8000:80
+    volumes:
+      - ./HTML:/usr/share/nginx/html:ro
+    networks:
+      - network1
+networks:
+  network1:
+    name: network1
+    external: True
