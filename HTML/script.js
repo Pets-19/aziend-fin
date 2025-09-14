@@ -72,7 +72,7 @@ function loadFooterComponent() {
                 console.error("Error loading footer component:", error);
                 // Fallback: show a basic footer message
                 footerContainer.innerHTML =
-                    '<footer class="bg-gray-900 text-white text-center py-8"><p>© 2025 Aziend. All rights reserved.</p></footer>';
+                    '<footer class="bg-gray-900 text-white text-center py-8"><p>Â© 2025 Aziend. All rights reserved.</p></footer>';
             });
     }
 }
@@ -111,13 +111,13 @@ const servicesData = [
         title: "VAT (5%)",
         icon: "calculator",
         forPersona: "Finance Teams",
-        solves: "VAT registration, refunds, periodic filings, voluntary & mandatory thresholds, invoicing & record‑keeping",
+        solves: "VAT registration, refunds, periodic filings, voluntary & mandatory thresholds, invoicing & recordâ€‘keeping",
         outcomes: ["TRN registration", "VAT returns", "Advisory"],
         timeline: "Ongoing",
     },
     {
         id: 4,
-        title: "ESR / UBO / AML‑CFT",
+        title: "ESR / UBO / AMLâ€‘CFT",
         icon: "shield-check",
         forPersona: "Compliance Teams",
         solves: "Economic Substance (notification & report), Ultimate Beneficial Owner registry, AML policies, KYC & risk scoring",
@@ -138,7 +138,7 @@ const servicesData = [
         title: "Banking & Treasury",
         icon: "credit-card",
         forPersona: "Finance Teams",
-        solves: "Corporate bank account opening support, KYC packs, payments setup, treasury & cash‑flow good practices",
+        solves: "Corporate bank account opening support, KYC packs, payments setup, treasury & cashâ€‘flow good practices",
         outcomes: ["Account opening", "Merchant & POS"],
         timeline: "2-6 weeks",
     },
@@ -147,7 +147,7 @@ const servicesData = [
         title: "Accounting, Payroll & WPS",
         icon: "file-text",
         forPersona: "Finance & HR Teams",
-        solves: "IFRS bookkeeping, monthly closes, payroll, WPS, end‑of‑service gratuity, and audit readiness",
+        solves: "IFRS bookkeeping, monthly closes, payroll, WPS, endâ€‘ofâ€‘service gratuity, and audit readiness",
         outcomes: ["Virtual CFO", "Audit coordination"],
         timeline: "Monthly",
     },
@@ -165,18 +165,9 @@ const servicesData = [
         title: "M&A, DD & Valuations (lite)",
         icon: "trending-up",
         forPersona: "Investors & Acquirers",
-        solves: "Buy‑/sell‑side readiness, due diligence checklists, cap table & valuation guidance (non‑regulated advisory)",
+        solves: "Buyâ€‘/sellâ€‘side readiness, due diligence checklists, cap table & valuation guidance (nonâ€‘regulated advisory)",
         outcomes: ["DD checklists", "Vendor data room"],
         timeline: "3-6 months",
-    },
-    {
-        id: 10,
-        title: "Customs & Trade",
-        icon: "package",
-        forPersona: "Import/Export Teams",
-        solves: "Importer registration, customs code, origin documentation, and duty optimization for free zones",
-        outcomes: ["Customs code", "Origin certs"],
-        timeline: "2-4 weeks",
     },
 ];
 
@@ -3288,7 +3279,7 @@ function populateRegulationTicker() {
         .slice(0, 5)
         .map(
             (update) =>
-                `<span class="mx-8">📋 ${update.title} - ${formatDate(
+                `<span class="mx-8">ðŸ“‹ ${update.title} - ${formatDate(
                     update.date
                 )}</span>`
         )
